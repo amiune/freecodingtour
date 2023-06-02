@@ -1,31 +1,90 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html lang="en">
+<head>
 <title>Free Coding Tour</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" media="all" href="./assets/styles/web.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="robots" content="noindex, follow">
 <body>
+<div class="wrapper d-flex align-items-stretch">
+<nav id="sidebar">
+<div class="custom-menu">
+<button type="button" id="sidebarCollapse" class="btn btn-primary">
+<i class="fa fa-bars"></i>
+<span class="sr-only">Toggle Menu</span>
+</button>
+</div>
+<div class="p-4 pt-5">
+<!--h1><a href="index.html" class="logo">FCT</a></h1-->
+<h3><b>Free<br/>Coding<br/>Tour<br/><br/></b></h3>
+<ul class="list-unstyled components mb-5">
+<li class="active">
+<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+<ul class="collapse list-unstyled" id="homeSubmenu">
+<li>
+<a href="#">Home 1</a>
+</li>
+<li>
+<a href="#">Home 2</a>
+</li>
+<li>
+<a href="#">Home 3</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">About</a>
+</li>
+<li>
+<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+<ul class="collapse list-unstyled" id="pageSubmenu">
+<li>
+<a href="#">Page 1</a>
+</li>
+<li>
+<a href="#">Page 2</a>
+</li>
+<li>
+<a href="#">Page 3</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Portfolio</a>
+</li>
+<li>
+<a href="#">Contact</a>
+</li>
+</ul>
+<div class="footer">
+</div>
+</div>
+</nav>
 
-<div class="wrapper book contents-page" data-title="Free Coding Tour">
-
-<div class="content">
-<h1 id="contents">Free Coding Tour</h1>
+<div id="content" class="p-4 p-md-5 pt-5">
+<h1 class="mb-4">Free Coding Tour</h1>
 <p>Aqui encotraras cursos de programacion faciles, gratuitos y sin publicidad</p>
-<h3>Curso Data Science Basico</h3>
+<h3><a href="./cursos/espanol/es-datascience-basico.html">Curso Data Science Basico</a></h3>
 <p>
 Curso rapido para aprender lo elemental de la ciencia de datos
-<br/><a href="./espanol/es-datascience-basico.html" class="button">Ir al curso</a>
 </p>
 
-<h3>Curso Data Science Avanzado</h3>
+<h3><a href="./cursos/espanol/es-datascience-avanzado.html">Curso Data Science Avanzado</a></h3>
 <p>
 Curso completo para aprender un poco de la matematica y los aspectos fundamentales 
 detras de ciencia de datos
-<br/><a href="./espanol/es-datascience-avanzado.html" class="button">Ir al curso</a>
 </p>
-
-</div><!--.content-->
-
-</div><!--.wrapper-->
+</div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
