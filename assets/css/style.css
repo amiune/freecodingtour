@@ -133,11 +133,11 @@
     top: -.5em; }
   
   a {
-    color: #007bff;
+    color: #6a9fb5;
     text-decoration: none;
     background-color: transparent; }
     a:hover {
-      color: #0056b3;
+      color: #6a9fb5;
       text-decoration: underline; }
   
   a:not([href]):not([tabindex]) {
@@ -2072,11 +2072,11 @@
   
   .btn-primary {
     color: #fff;
-    background-color: #007bff;
+    background-color: #6a9fb5;
     border-color: #007bff; }
     .btn-primary:hover {
       color: #fff;
-      background-color: #0069d9;
+      background-color: #6a9fb5;
       border-color: #0062cc; }
     .btn-primary:focus, .btn-primary.focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
@@ -8208,7 +8208,7 @@
   #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #666666;
+    background: #6a9fb5;
     color: #fff;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -8221,10 +8221,13 @@
       #sidebar.active .custom-menu {
         margin-right: -50px; }
     #sidebar h1 {
+      font-size: 1.75rem;
       margin-bottom: 20px;
       font-weight: 700; }
-      #sidebar h1 .logo {
+      #sidebar h1 a {
         color: #fff; }
+      #sidebar h1 a:hover {
+        color: #000; }
     #sidebar ul.components {
       padding: 0; }
     #sidebar ul li {
@@ -8270,11 +8273,16 @@
         height: 40px;
         border-radius: 50%; }
         #sidebar .custom-menu .btn.btn-primary {
-          background: #333333;
-          border-color: #333333; }
-          #sidebar .custom-menu .btn.btn-primary:hover, #sidebar .custom-menu .btn.btn-primary:focus {
-            background: #333333 !important;
-            border-color: #333333 !important; }
+          background: #6a9fb5;
+          border-color: #fff; }
+          
+          #sidebar .custom-menu .btn.btn-primary:focus { 
+            background: #6a9fb5 !important;
+            border-color: #fff !important;}
+          #sidebar .custom-menu .btn.btn-primary:hover {
+            color: #000 !important;
+            background: #6a9fb5 !important;
+            border-color: #000 !important; }
   
   a[data-toggle="collapse"] {
     position: relative; }
