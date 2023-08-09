@@ -1,0 +1,15 @@
+clima,temperatura,olas,viento,surf
+soleado,caluroso,pocas,false,no
+soleado,caluroso,pocas,true,no
+nublado,caluroso,pocas,false,si
+lluvia,templado,pocas,false,si
+lluvia,fresco,normal,false,si
+lluvia,fresco,normal,true,no
+nublado,fresco,normal,true,si
+soleado,templado,pocas,false,no
+soleado,fresco,normal,false,si
+lluvia,templado,normal,false,si
+soleado,templado,normal,true,si
+nublado,templado,pocas,true,si
+nublado,caluroso,normal,false,si
+lluvia,templado,pocas,true,no
