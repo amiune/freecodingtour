@@ -1,0 +1,30 @@
+Understanding the problem: Scoping
+Getting the data and preprocesing
+Choosing the model
+Measuring the results
+Deployment
+Monitoring and improving
+
+Activation functions: 
+- ReLu: better for avoiding vanishing gradient in DL 
+- Sigmoid: better when multiple possible answer in multiclass 1 / (1 + e^-x)
+- Softmax: better when only one possible answer in multiclass e^zi / sum(e^z)
+
+Cost functions: 
+- Regresion: mean squared error sum((y - y')^2)/n where y' = sum(xb)
+-- Regularization: L1, L2: L1 does feature selection sum((y - y')^2)/n + lambda * sum(|b|)
+- Classification: cross enthropy, binary cross enthropy
+-- Cross enthropy: a measure of the difference between two probability distributions H(P, Q) = – sum x in X P(x) * log(Q(x))
+
+Metrics: 
+    Accuracy: fraction of acurate prediction
+- Skew Datasets:
+    Precision: TP / (TP + FP)
+    Recall: TP / (TP + FN)
+    F1 Score: 2 / (1/P + 1/R)
+    ROC curve: the precision and recall measures for different sigmoid thresholds
+    - Area Under de Curve: is the measure of the ability of a classifier to distinguish 
+    between classes and is used as a summary of the ROC curve
+
+- Training, Validation, Test
+-- Average N fold cross validation
