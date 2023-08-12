@@ -1,7 +1,7 @@
-Precio,Memoria_64,Memoria_256,Memoria_512,Color_Gris,Color_Oro,Color_Verde,Desbloqueado_False,Desbloqueado_True,Estado_Bueno,Estado_Muy bueno,Estado_Reacondicionado
-469.82,0,1,0,1,0,0,0,1,0,1,0
-419.99,1,0,0,1,0,0,0,1,0,0,1
-535.0,0,0,1,0,1,0,1,0,0,0,1
-422.6,0,1,0,1,0,0,0,1,1,0,0
-397.92,0,1,0,0,0,1,0,1,1,0,0
-461.99,0,1,0,1,0,0,1,0,0,0,1
+Bateria,Precio,Memoria_64,Memoria_256,Memoria_512,Color_Gris,Color_Oro,Color_Verde,Estado_Bueno,Estado_Muy bueno,Estado_Reacondicionado
+0.84,461.99,0,1,0,1,0,0,0,0,1
+0.78,422.6,0,1,0,1,0,0,1,0,0
+0.79,419.99,1,0,0,1,0,0,0,0,1
+1.0,499.0,0,1,0,1,0,0,1,0,0
+0.86,535.0,0,0,1,0,1,0,0,0,1
+0.82,469.82,0,1,0,1,0,0,0,1,0

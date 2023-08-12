@@ -1,9 +1,9 @@
-Memoria,Color,Desbloqueado,Estado,Precio
-256,Gris,False,Reacondicionado,461.99
-256,Gris,False,Bueno,376.84
-64,Gris,True,Reacondicionado,419.99
-512,Oro,False,Reacondicionado,535.0
-256,Gris,False,Bueno,499.0
-256,Verde,True,Bueno,397.92
-256,Gris,True,Muy bueno,469.82
-256,Gris,True,Bueno,422.6
+Memoria,Color,Bateria,Estado,Precio
+256,Gris,84,Reacondicionado,461.99
+256,Gris,70,Bueno,376.84
+64,Gris,79,Reacondicionado,419.99
+512,Oro,86,Reacondicionado,535.0
+256,Gris,100,Bueno,499.0
+256,Verde,74,Bueno,397.92
+256,Gris,82,Muy bueno,469.82
+256,Gris,78,Bueno,422.6
