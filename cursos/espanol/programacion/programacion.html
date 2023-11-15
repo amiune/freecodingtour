@@ -51,12 +51,9 @@
             <div id="content" class="p-4 p-md-5 pt-5">
                 <h1 class="mb-4">Programacion Coding Tour</h1>
                 <p>Curso rapido de programacion en python. Desde cero.</p>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/LOPzWyyT23k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
                 <h2>Contenido:</h2>
                 <ul>
-                    <li>Unidad 0: <a href="https://githubtocolab.com/amiune/freecodingtour/blob/main/cursos/espanol/programacion/0_intro.ipynb">Una calculadora potente</a></li>
+                    <li>Unidad 0: <a href="https://githubtocolab.com/amiune/freecodingtour/blob/main/cursos/espanol/programacion/0_intro.ipynb">Una calculadora potente</a> [<a href="#" class="video-btn" data-video-id="LOPzWyyT23k">Video</a>]</li>
                     <li>Unidad 1: <a href="https://githubtocolab.com/amiune/freecodingtour/blob/main/cursos/espanol/programacion/1_variables.ipynb">Guardando resultados en la memoria</a></li>
                     <li>Unidad 2: <a href="https://githubtocolab.com/amiune/freecodingtour/blob/main/cursos/espanol/programacion/2_condiciones.ipynb">Comparar dos valores</a></li>
                     <li>Unidad 3: <a href="https://githubtocolab.com/amiune/freecodingtour/blob/main/cursos/espanol/programacion/3_if.ipynb">Si pasa algo entonces haz esto</a></li>
@@ -102,6 +99,88 @@
                 
             </div>
         </div>
+
+        <!-- The Modal -->
+        <div id="videoModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('videoModal');
+            // Get the iframe within the modal
+            var iframe = modal.querySelector('iframe');
+            // Get the close button
+            var span = document.getElementsByClassName("close")[0];
+            // Get all video buttons
+            var videoButtons = document.querySelectorAll('.video-btn');
+
+            // When a video button is clicked, open the modal and load the video
+            videoButtons.forEach(function(btn){
+            btn.addEventListener('click', function(){
+                var videoId = btn.getAttribute('data-video-id');
+                iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+                modal.style.display = 'block';
+            });
+            });
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.addEventListener('click', function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                iframe.src = ''; // Stop the video by clearing the src
+            }
+            });
+        </script>
+
+        <style>
+            /* The Modal (background) */
+            .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 2; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.8); /* Black with opacity */
+            }
+
+            /* Modal Content */
+            .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; /* Width in percentage of screen width */
+            max-width: 1200px; /* Maximum width of the content */
+            }
+
+            .modal iframe {
+            display: block; /* Remove default inline display */
+            width: 100%; /* Responsive video width */
+            height: calc(100vw * (9 / 16)); /* Maintain a 16:9 aspect ratio */
+            max-height: 90vh; /* Maximum video height */
+            border: none; /* Remove border */
+            }
+
+            /* Add some padding and scrolling for smaller screens */
+            @media screen and (max-width: 700px) {
+                .modal-content {
+                    width: 90%;
+                }
+                .modal iframe {
+                    height: calc(90vw * (9 / 16));
+                }
+            }
+
+        </style>
   
         <script src="../../../assets/js/jquery.min.js"></script>
         <script src="../../../assets/js/popper.js"></script>
