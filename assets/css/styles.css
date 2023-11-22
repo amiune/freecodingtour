@@ -308,6 +308,12 @@
       flex-direction: column;
       padding: 0;
     }
+    .course-info .image-container {
+      height: 200px; /* Adjust to desired crop height */
+    }
+    .course-info .centered-text {
+      font-size: 20px;
+    }
     .contact-info {
       flex-direction: column;
     }
