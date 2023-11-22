@@ -1,0 +1,320 @@
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F3EA;
+    color: #333;
+  }
+  .container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  h1{
+    font-size: 3rem;
+    font-family: 'League Spartan', sans-serif;
+  }
+  h3{
+    font-size: 2rem;
+    font-family: 'League Spartan', sans-serif;
+  }
+
+  /* Header Styles */
+  header {
+    background-color: #333D51;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    color: #CBD0D8;
+    font-family: 'League Spartan', sans-serif;
+  }
+  .logo{
+    font-size: xx-large;
+    font-weight: bold;
+    color: #F4F3EA;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 840px;
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .nav ul li {
+    padding: 0.05rem 0.5rem;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  /* Introduction Section */
+  .intro {
+    padding: 2rem 0;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 840px;
+  }
+  .intro ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .intro ul li:before {
+    content: "\2192"; /* Unicode for right arrow */
+    padding-right: 8px; /* Space between the arrow and the list item text */
+    font-size: 20px;
+  }
+  .intro ul li{
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /* Courses Section */
+  .courses{
+    max-width: 840px;
+  }
+  .courses h2{
+    font-size: 3rem;
+    font-family: 'League Spartan', sans-serif;
+  }
+  .decorated-title {
+    position: relative;
+    padding-left: 0; /* Adjust the padding to make room for the image */
+  }
+  .decorated-title::before {
+    content: "";
+    position: absolute;
+    top: -120px; /* Align to the top of the h2 */
+    left: -200px; /* Align to the left of the h2 */
+    width: 200px; /* Width of the image */
+    height: 200px; /* Height of the image */
+    background-image: url('../img/avioncito.png'); /* Path to your image */
+    background-size: cover; /* Resize the background image to cover the entire width and height */
+    background-repeat: no-repeat;
+  }
+  .course-card {
+    overflow: hidden;
+    /*border-radius: 8px;*/
+    /*box-shadow: 0 4px 6px rgba(0,0,0,0.1);*/
+    margin-bottom: 2rem;
+  }
+  .course-info {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Puts maximum space between flex items */
+  }
+  .course-info .image-container {
+    position: relative;
+    max-width: 50%;
+    height: 200px; /* Adjust to desired crop height */
+    overflow: hidden; /* Hide the overflow to crop the image */
+    border-radius: 15px;
+  }
+  .course-info .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Choose text color that contrasts well with your image */
+    font-size: 40px;
+    font-weight:bolder;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+  }
+  .course-info img {
+    max-width: 100%; /* Sets maximum width for the image */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 15px;
+  }
+  .course-info .text {
+    max-width:40%; /* Sets maximum width for the text */
+    padding-left: 20px; /* Adds space between the image and the text */
+    font-size: larger;
+    font-family: 'Raleway', sans-serif;
+  }
+  .course-info ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .course-info ul li:before {
+    content: "\2192"; /* Unicode for right arrow */
+    padding-right: 8px; /* Space between the arrow and the list item text */
+    font-size: 20px;
+  }
+  .course-info ul li{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+
+  /* Contact Section */
+  .contact {
+    max-width: 840px;
+  }
+  .contact h2{
+    font-size: 3rem;
+    font-family: 'League Spartan', sans-serif;
+  }
+  .contact-intro {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .contact-info ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 50px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .contact-info ul li{
+    padding-bottom: 10px;
+  }
+  .icon{
+    font-size: x-large;
+    margin-right: 20px;
+    color: #D3AC2B;
+  }
+
+  /* Classes Section */
+  .classes {
+    max-width: 840px;
+  }
+  .classes h2{
+    font-size: 3rem;
+    font-family: 'League Spartan', sans-serif;
+  }
+  .classes-intro {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .classes-info ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 50px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .classes-info ul li:before {
+    content: "\2192"; /* Unicode for right arrow */
+    padding-right: 8px; /* Space between the arrow and the list item text */
+    font-size: 20px;
+    color: #D3AC2B;
+  }
+  .classes-info ul li{
+    padding-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .classes-info ul li a{
+    font-weight: normal;
+  }
+  .classes-info ul li a:hover{
+    color: #D3AC2B;
+  }
+
+  /* About Section */
+  .about {
+    max-width: 840px;
+  }
+  .about h2{
+    font-size: 3rem;
+    font-family: 'League Spartan', sans-serif;
+  }
+  .about-info {
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /* Footer Styles */
+  footer {
+    background-color: #333D51;
+    color: #CBD0D8;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 100px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-around; /* This spreads out the sitemap sections evenly */
+    align-items: start;
+    max-width: 840px;
+    margin: 0 auto; /* Centers the container */
+  }
+  .sitemap-section h3 {
+    margin-bottom: 5px;
+  }
+  .sitemap-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  .sitemap-section ul li a {
+    color:#CBD0D8;
+    text-decoration: none; /* Removes underline from links */
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+
+
+  .separator {
+    border-top:3px dashed #CBD0D8; /* Create a dashed line */
+    color: transparent; /* Makes sure there is no default line color */
+    background-color: transparent; /* Ensures no background color affects the line */
+    max-width: 840px; /* Maximum width of the line */
+    margin: 20px auto; /* Centers the line with equal space above and below */
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black with opacity */
+  }
+
+    /* Modal Content */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Width in percentage of screen width */
+    max-width: 1200px; /* Maximum width of the content */
+  }
+
+  .modal iframe {
+    display: block; /* Remove default inline display */
+    width: 100%; /* Responsive video width */
+    height: calc(100vw * (9 / 16)); /* Maintain a 16:9 aspect ratio */
+    max-height: 90vh; /* Maximum video height */
+    border: none; /* Remove border */
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 700px){ /*(max-width: 768px) {*/
+    .nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+    .contact-info {
+      flex-direction: column;
+    }
+    .modal-content {
+      width: 90%;
+    }
+    .modal iframe {
+        height: calc(90vw * (9 / 16));
+    }
+  }
