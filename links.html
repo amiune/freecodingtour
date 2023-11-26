@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Link Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #F4F3EA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            width: 100px; /* Adjust as necessary for your image */
+            height: 100px; /* Adjust to maintain aspect ratio */
+            border-radius: 10px; /* Makes the image circular */
+            margin-bottom: 20px; /* Adds some space between the image and the links */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .link-container {
+            background: #CBD0D8;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+        }
+        .link {
+            display: block;
+            background: #333D51;
+            color: #ffffff;
+            padding: 10px 15px;
+            margin: 10px 0;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .link:hover {
+            background-color: #D3AC2B;
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <img src="./assets/img/logo.png" alt="Your Logo" class="logo">
+        <!-- Replace href values with your actual URLs -->
+        <a href="https://www.freecodingtour.com/" class="link">Sitio Web</a>
+        <a href="https://www.youtube.com/channel/UCB--6uEGD_Ak8oYuJBwdHdQ" class="link">Youtube</a>
+        <a href="https://www.instagram.com/freecodingtour/" class="link">Instagram</a>
+        <a href="https://www.tiktok.com/@freecodingtour" class="link">Tiktok</a>
+        <!-- Add more links as needed -->
+    </div>
+</body>
+</html>
