@@ -304,13 +304,27 @@
 
   /* Responsive Design */
   @media screen and (max-width: 700px){ /*(max-width: 768px) {*/
+    .intro {
+      text-align: left;
+    }
+    .contact-intro {
+      text-align: left;
+    }
+    .classes-intro {
+      text-align: left;
+    }
+    .about-info{
+      text-align: left;
+    }
     .nav ul {
       flex-direction: column;
       padding: 0;
     }
-    .course-info .centered-text {
-      top: 30%;
-      font-size: 20px;
+    .course-info .image-container {
+      max-width: 100%;
+    }
+    .course-info .text {
+      display:none;
     }
     .contact-info {
       flex-direction: column;
