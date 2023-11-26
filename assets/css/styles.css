@@ -313,6 +313,12 @@
     .classes-intro {
       text-align: left;
     }
+    .classes-info ul{
+      margin-left: 5px;
+    }
+    .classes-info ul ul{
+      margin-left: 20px;
+    }
     .about-info{
       text-align: left;
     }
