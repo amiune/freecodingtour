@@ -342,4 +342,7 @@
     .sitemap-section ul li{
       padding-bottom: 20px;
     }
+    .unit {
+      display:none;
+    }
   }
