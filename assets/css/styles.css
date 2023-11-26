@@ -335,4 +335,11 @@
     .modal iframe {
         height: calc(90vw * (9 / 16));
     }
+    .footer-container {
+      display: block;
+      padding: 20px;
+    }
+    .sitemap-section ul li{
+      padding-bottom: 20px;
+    }
   }
