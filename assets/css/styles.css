@@ -310,6 +310,9 @@
     .contact-intro {
       text-align: left;
     }
+    .contact-info ul{
+      margin-left: 5px;
+    }
     .classes-intro {
       text-align: left;
     }
