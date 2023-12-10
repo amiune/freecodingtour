@@ -233,6 +233,34 @@
     font-family: 'Raleway', sans-serif;
   }
 
+  /* About Section */
+  .blogpost {
+    max-width: 840px;
+  }
+  .blogpost h1{
+    font-size: 3rem;
+    font-family: 'League Spartan', sans-serif;
+  }
+  .blogpost-text {
+    line-height: 28px;
+    text-align: left;
+    color: #333D51;
+    font-size: 20px;
+    font-family:'Raleway', sans-serif;
+    font-family:'Arial', sans-serif;
+  }
+  .blogpost-text li{
+    margin: 12px 0;
+  }
+  .blogpost a{
+    color: #333D51;
+    font-weight: bold;
+  }
+  .blogpost a:hover{
+    color: #D3AC2B;
+    font-weight: bold;
+  }
+
   /* Footer Styles */
   footer {
     background-color: #333D51;
