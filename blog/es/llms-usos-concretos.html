@@ -94,18 +94,18 @@
     chatIcon.addEventListener('click', () => {
       const popup = document.createElement('div');
       popup.style.position = 'fixed';
-      popup.style.right = '20px';
-      popup.style.bottom = '80px';
-      popup.style.width = '840px';
-      popup.style.height = '600px';
+      popup.style.right = '10px';
+      popup.style.bottom = '10px';
+      popup.style.width = '90vw';
+      popup.style.height = '90vh';
       popup.style.backgroundColor = 'white';
       popup.style.borderRadius = '10px';
       popup.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
     
       const iframe = document.createElement('iframe');
       iframe.src = 'https://emtagent1.streamlit.app/?embed=true';
-      iframe.style.width = '100%';
-      iframe.style.height = '100%';
+      iframe.style.width = '90vw';
+      iframe.style.height = '90vh';
       iframe.style.border = 'none';
     
       const closeButton = document.createElement('div');
