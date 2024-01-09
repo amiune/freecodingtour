@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/styles.css">
+<title>Usos concretos de LLMs</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container nav">
+    <a class="logo" href="https://www.freecodingtour.com/index.html">Free<br>Coding<br>Tour.</a>
+      <nav>
+        <ul>
+          <li><a href="https://www.freecodingtour.com/index.html#tours">Coding Tours</a></li>
+          <li><a href="https://www.freecodingtour.com/index.html#contact">Dudas</a></li>
+          <li><a href="https://www.freecodingtour.com/index.html#classes">Clases Presenciales</a></li>
+          <li><a href="https://www.freecodingtour.com/index.html#about">Sobre FCT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Post Section -->
+  <section id="blogpost" class="blogpost container">
+    <h1>Usos Concretos de LLMs</h1>
+    <div class="blogpost-text">
+        <p>
+            Aqui veremos la implementacion de LLMs en elMejorTrato.com: 
+            
+        </p>
+        <p>
+            Otro parrafo del post
+        </p>
+        <p>
+          Comieza a aprender hoy, gratis y desde cero en: 
+          <a href="https://www.freecodingtour.com/">FreeCodingTour.com</a>.
+        </p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="sitemap-section">
+        <h3>Cursos</h3>
+        <ul>
+          <li><a href="https://www.freecodingtour.com/cursos/espanol/programacion/programacion.html">Programacion</a></li>
+          <li><a href="https://www.freecodingtour.com/cursos/espanol/datascience/datascience.html">Ciencia de Datos</a></li>
+          <li><a href="https://www.freecodingtour.com/cursos/espanol/deeplearning/deeplearning.html">Inteligencia Artificial</a></li>
+        </ul>
+      </div>
+      <div class="sitemap-section">
+        <h3>Secciones</h3>
+        <ul>
+          <li><a href="https://www.freecodingtour.com/index.html#contact">Dudas</a></li>
+          <li><a href="https://www.freecodingtour.com/index.html#classes">Clases Presenciales</a></li>
+          <li><a href="https://www.freecodingtour.com/links.html">Redes Sociales</a></li>
+          <li><a href="https://www.freecodingtour.com/blog/es/blog-indice.html">Blog</a></li>
+          <li><a href="https://www.freecodingtour.com/index.html#about">Sobre FCT</a></li>
+        </ul>
+      </div>
+      <div class="sitemap-section">
+        <h3><a href="#">Free<br>Coding<br>Tour.</a></h3>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const chatIcon = document.createElement('div');
+    chatIcon.style.position = 'fixed';
+    chatIcon.style.right = '20px';
+    chatIcon.style.bottom = '20px';
+    chatIcon.style.width = '50px';
+    chatIcon.style.height = '50px';
+    chatIcon.style.borderRadius = '50%';
+    chatIcon.style.borderStyle = 'solid';
+    chatIcon.style.borderColor = '#D3AC2B';
+    chatIcon.style.borderWidth = '5px'
+    chatIcon.style.backgroundColor = '#333D51';
+    chatIcon.style.color = 'white';
+    chatIcon.style.textAlign = 'center';
+    chatIcon.style.lineHeight = '50px';
+    chatIcon.style.fontSize = '30px';
+    chatIcon.style.cursor = 'pointer';
+    chatIcon.innerHTML = '💬';
+    
+    document.body.appendChild(chatIcon);
+    
+    chatIcon.addEventListener('click', () => {
+      const popup = document.createElement('div');
+      popup.style.position = 'fixed';
+      popup.style.right = '20px';
+      popup.style.bottom = '80px';
+      popup.style.width = '840px';
+      popup.style.height = '600px';
+      popup.style.backgroundColor = 'white';
+      popup.style.borderRadius = '10px';
+      popup.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
+    
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://emtagent1.streamlit.app/?embed=true';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.border = 'none';
+    
+      const closeButton = document.createElement('div');
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '10px';
+      closeButton.style.right = '10px';
+      closeButton.style.width = '20px';
+      closeButton.style.height = '20px';
+      closeButton.style.borderRadius = '50%';
+      closeButton.style.backgroundColor = '#333D51';
+      closeButton.style.color = 'white';
+      closeButton.style.textAlign = 'center';
+      closeButton.style.lineHeight = '20px';
+      closeButton.style.fontSize = '16px';
+      closeButton.style.cursor = 'pointer';
+      closeButton.innerHTML = 'x';
+    
+      closeButton.addEventListener('click', () => {
+        document.body.removeChild(popup);
+      });
+    
+      popup.appendChild(closeButton);
+      popup.appendChild(iframe);
+      document.body.appendChild(popup);
+    });
+    
+    
+    </script>
+
+  <script src="https://getinsights.io/js/insights.js"></script>
+  <script>insights.init('Tchyd3Xp64Qo3Z2c');insights.trackPages();</script>
+
+</body>
+</html>
