@@ -7,8 +7,8 @@
  * Licensed under MIT
  */
 
-const BLOG_URL = "https://www.generativenetworks.com/blog/";
-const REPO_ADDRESS = "amiune/generativenetworks";
+const BLOG_URL = "https://www.freecodingtour.com/blog/";
+const REPO_ADDRESS = "amiune/freecodingtour";
 
 function slug_to_title(slug) {
     var words = slug.split('-');
