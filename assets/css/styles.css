@@ -24,6 +24,12 @@
     font-family: 'League Spartan', sans-serif;
   }
 
+  img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+  }
+
   /* Header Styles */
   header {
     background-color: #333D51;

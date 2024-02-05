@@ -37,3 +37,9 @@ summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
   background-color: transparent;
   color: var(--contrast-hover);
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+}
