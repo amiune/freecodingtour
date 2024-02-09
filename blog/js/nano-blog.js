@@ -9,6 +9,7 @@
 
 const BLOG_URL = "https://www.freecodingtour.com/blog/";
 const REPO_ADDRESS = "amiune/freecodingtour";
+const ORDER_NEW_POSTS_FIRST = false;
 
 function slug_to_title(slug) {
     // The first part of the slug is used to save the date
