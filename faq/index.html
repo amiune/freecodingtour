@@ -42,15 +42,21 @@
   <section id="blogpost" class="blogpost container">
     <div id="content"></div>
     <br/><br/><br/><br/><br/>
-    <div id="disqus_thread"></div>
-    <script>
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://freecodingtour.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
+    <form
+      action="https://formspree.io/f/xdoqzedy"
+      method="POST"
+    >
+      <label>
+        Your email:
+        <input type="email" name="email">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <!-- Footer Section -->
