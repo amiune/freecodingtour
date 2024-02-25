@@ -1,4 +1,11 @@
-# El Metodo de Aprendizaje
+# Como Aprender IA desde cero?
+
+Para aprender Inteligencia Artificial desde cero FreeCodingTour tiene tres cursos que deberas hacer en el siguiente orden:
+
+1. [Programacion](https://www.freecodingtour.com/cursos/espanol/programacion/programacion.html)
+2. [Ciencia de Datos](https://www.freecodingtour.com/cursos/espanol/datascience/datascience.html)
+3. [Inteligencia Artificial](https://www.freecodingtour.com/cursos/espanol/deeplearning/deeplearning.html)
+
 
 El Metodo de Aprendizaje de Inteligencia Artificial en FreeCodingTour se basa en los siguientes principios: 
 

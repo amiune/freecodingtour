@@ -7,7 +7,7 @@
  * Licensed under MIT
  */
 
-const BLOG_URL = "https://www.freecodingtour.com/blog/";
+const BLOG_URL = "https://www.freecodingtour.com/faq/";
 const REPO_ADDRESS = "amiune/freecodingtour";
 const ORDER_NEW_POSTS_FIRST = false;
 
