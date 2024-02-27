@@ -43,3 +43,51 @@ img {
   height: auto;
   border-style: none;
 }
+
+/* Form Container & Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px; /* Adjust max-width for larger forms on desktop */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* Labels & Inputs */
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top:10px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+/* Button */
+button[type="submit"] {
+  background-color: #333D51;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #333D51;
+}
+ 

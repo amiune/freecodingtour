@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
     <script src="https://unpkg.com/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
     <title>Preguntas Frecuentes</title>
 </head>
@@ -42,20 +43,26 @@
   <section id="blogpost" class="blogpost container">
     <div id="content"></div>
     <br/><br/><br/><br/><br/>
+    
     <form
       action="https://formspree.io/f/xdoqzedy"
       method="POST"
     >
+    <h3>Envia tu pregunta</h3>
+      <label>
+        Nombre:
+        <input type="text" name="firstname" required>
+      </label>  
       <label>
         Email:
-        <input type="email" name="email">
+        <input type="email" name="email" required>
       </label>
       <label>
         Tu Pregunta:
-        <textarea name="message"></textarea>
+        <textarea name="message" required></textarea>
       </label>
       <!-- your other form fields go here -->
-      <button type="submit">Send</button>
+      <button type="submit">Enviar</button>
     </form>
   </section>
 
