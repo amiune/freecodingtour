@@ -48,7 +48,7 @@ img {
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 88%;
   max-width: 800px; /* Adjust max-width for larger forms on desktop */
   padding: 20px;
   border: 1px solid #ccc;
