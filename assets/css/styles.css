@@ -222,9 +222,17 @@
   .classes-info ul li a{
     font-weight: normal;
   }
+  .classes-info ul li a:visited{
+    color: #8b8b8b;
+    font-style: oblique;
+  }
   .classes-info ul li a:hover{
     color: #D3AC2B;
   }
+  .classes-info ul li a:visited:hover{
+    color: #D3AC2B;
+  }
+  
 
   /* About Section */
   .about {
