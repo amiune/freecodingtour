@@ -96,23 +96,33 @@ button[type="submit"]:hover {
           <li><span class="unit">Unidad 2: </span><a target="_blank" href="https://colab.research.google.com/github/amiune/freecodingtour/blob/main/cursos/espanol/programacion_basico/2_patrones_repetidos.ipynb">Encontrando Patrones que se Repiten</a></li>
           <li><span class="unit">Unidad 3: </span><a target="_blank" href="https://colab.research.google.com/github/amiune/freecodingtour/blob/main/cursos/espanol/programacion_basico/3_mas_instrucciones.ipynb">Mas Instrucciones</a></li>
           <li><span class="unit">Salon del Arte: </span><a target="_blank" href="https://colab.research.google.com/github/amiune/freecodingtour/blob/main/cursos/espanol/programacion_basico/X_salon_del_arte.ipynb">Los mejores dibujos de los alumnos</a></li>
+          <script>
+            
+            function showForm(event){
+              event.preventDefault();
+              tmp = document.getElementById('form').style.display;
+              if(tmp == "none") tmp = "block"; else tmp = "none";
+              document.getElementById('form').style.display = tmp;
+            }
+          </script>
+          <li><a href="#" onclick="showForm(event)">Envia tu dibujo</a></li>
         </ul>
     </div>
   </section>
 
-  <hr class="separator">
-
-  <section class="classes container">
+  
+  <section id="form" class="classes container" style="display:none">
+    <hr class="separator">
     <div class="classes-info">
       <form action="https://formspree.io/f/xdoqzedy" method="POST">
         <h3>Envia tu dibujo para el Salon del Arte</h3>
           <label>
             Tu Nombre:
-            <input type="text" name="firstname" required>
+            <input type="text" name="firstname" placeholder="Alicia" required>
           </label>
           <label>
             El codigo de tu dibujo:
-            <textarea name="message" required></textarea>
+            <textarea name="message" placeholder="#Ejemplo:&#10angulo = 92&#10for x in range(250):&#10  color((x,x,x))&#10  adelante(x)&#10  izquierda(angulo)" required></textarea>
           </label>
           <!-- your other form fields go here -->
           <button type="submit">Enviar</button>
