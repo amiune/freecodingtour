@@ -2,7 +2,7 @@
 
 - [Programming Competitions Ladder](https://www.acodedaily.com)
 - [The Recursive Book of Recursion](https://inventwithpython.com/recursion/)
-- [Maths Visula Proofs](https://news.ycombinator.com/item?id=42423409)
+- [Maths Visual Proofs](https://news.ycombinator.com/item?id=42423409)
 - [An Infinite Descent into Pure Mathematics](https://infinitedescent.xyz)
 
 
